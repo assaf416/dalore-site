@@ -1,0 +1,31 @@
+
+    
+      <section id="pricing" class="pricing">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>מחירים</h2>
+          
+        </div>
+
+        <div class="row">
+         {%  for plan in page.pricing %}
+         
+         <div class="col-lg-4 aos-init aos-animate text-right text-hebrew" data-aos="fade-up" data-aos-delay="100">
+            <div class="box {{plan.selected}}">
+              <h3>{{plan.title}}</h3>
+              <h4><sup>$</sup>{{plan.price}}<span class="float-left">{{plan.period}}</span></h4>
+              <ul>
+                  {%  for item in plan.features %}
+                <li class="text-hebrew text-right"><i class="bx bx-check"></i> {{item.title}}</li>
+                 {% endfor %}
+              </ul>
+              <a href="#" class="buy-btn">Get Started</a>
+            </div>
+          </div>
+         
+         {% endfor %}
+        </div>
+
+      </div>
+    </section>

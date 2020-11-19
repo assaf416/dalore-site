@@ -1,0 +1,93 @@
+
+    
+    <section id="about" class="about">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>{{page.about_title}}</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-12">
+                    <p>
+                        {{page.about_text}}
+                    </p>
+                
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+
+    {%  for section in page.sections %}
+    <section id="skills" class="skills {{section.background}}" style="direction:rtl; text-align:right">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>{{section.title}}</h2>
+                <p>{{section.open_text:}}</p>
+            </div>
+
+            <div class="row">
+                
+                {% if section.type == "left" %}
+                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+                    <h3> ניהול חשבונות מסחר</h3>
+                    <p class="font-italic">
+                        {{section.main_text}}
+                    </p>
+                    <div class="skills-content">
+                        {% for feature in section.features %}
+                        <ul>
+                            <li>
+                                <b>{{feature.title}}</b>
+                                <p>{{feature.text}}</p>
+                            </li>
+                            
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="{{section.image_url}}" class="img-fluid" alt="">
+                </div>
+                
+                {% else %}
+                
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="{{section.image_url}}" class="img-fluid" alt="">
+                </div>
+                
+                
+                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+                    <h3> ניהול חשבונות מסחר</h3>
+                    <p class="font-italic">
+                        {{section.main_text}}
+                    </p>
+                    <div class="skills-content">
+                        {% for feature in section.features %}
+                        <ul>
+                            <li>
+                                <b>{{feature.title}}</b>
+                                <p>{{feature.text}}</p>
+                            </li>
+                            
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                
+                {% endif %}
+
+            </div>
+
+
+        </div>
+
+</section><!-- End Skills Section -->
+
+{% endfor %}
