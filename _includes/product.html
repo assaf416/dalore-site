@@ -21,6 +21,34 @@
     </section>
 
 
+<!-- ======= Services Section ======= -->
+<section id="services" class="services ">
+    <div class="container text-hebrew text-right" data-aos="fade-up">
+        <div class="section-title">
+            <h2> מה כוללת המערכת </h2>
+        </div>
+
+        <div class="row">
+            {% for feature in page.features %}
+            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                <div class="text-hebrew text-right" style="margin-bottom: 2em">
+
+                    <div class="text-center"><img src="{{feature.image_url}}" class="img-fluid" alt="" width="120"></div>
+                    <br/>
+                    <b class="text-center">
+                        <a href="{{feature.href}}">{{feature.title}}</a></b>
+                    <p>{{feature.text}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section><!-- End Services Section -->
+
+
+
+
 
     {%  for section in page.sections %}
     <section id="skills" class="skills {{section.background}}" style="direction:rtl; text-align:right">
