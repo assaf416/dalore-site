@@ -8,14 +8,15 @@
 
         <div class="row">
             {% for product in page.products %}
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="icon-box">
                     
                     <div class="text-center"><img src="{{product.image_url}}" class="img-fluid" alt="" width="50"></div>
                     <br/>
-                    <b class="text-center">
-                        <a href="{{product.href}}">{{product.title}}</a></b>
-                    <p>{{product.text}}</p>
+                    <b class="">
+                        <a href="{{product.href}}" class="text-center">{{product.title}}</a>
+                    </b>
+                    <p class="text-right">{{product.text}}</p>
                 </div>
             </div>
             {% endfor %}
@@ -28,7 +29,7 @@
         
         <div class="row">
             {% for product in page.products2 %}
-            <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="icon-box">
                     
                     <div class="text-center"><img src="{{product.image_url}}" class="img-fluid" alt="" width="50"></div>
