@@ -17,11 +17,11 @@
               {% for img in page.screenshots %}
             <div class="col-lg-4 col-md-6 portfolio-item filter-{{img.category}}">
               <div class="portfolio-img"><img src="{{img.image_url}}" class="img-fluid" alt=""></div>
-              <div class="portfolio-info">
-                <h4>{{img.title}}</h4>
-                <p>App</p>
-                <a href="{{img.image_url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{img.title}}"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <div class="portfolio-info" style="height:50px; text-align: center;">
+                <a href="{{img.image_url}}" data-gall="portfolioGallery" class="venobox preview-link" title="{{img.caption}}" >
+                <p> click to view</p>
+                </a>
+                
               </div>
             </div>
               {% endfor %}
