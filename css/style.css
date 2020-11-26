@@ -9,11 +9,11 @@
  * Hebrew 
  */
 
- .hebrew{
+ .text-hebrew{
    direction:rtl;
  }
 
- .english{
+ .text-english{
    direction:ltr;
  }
 
