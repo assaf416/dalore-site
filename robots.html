@@ -43,7 +43,29 @@
           category: web
           caption:  Some Caption
           
-    
+    api: 
+        - method: GET
+          url:  /api/v1/robots
+          description:  list of robot
+        - method: GET
+          url:  /api/v1/robots/123
+          description:  robot info
+        - method: GET
+          url:  /api/v1/robots/123/start
+          description:  start robot 123
+        - method: GET
+          url:  /api/v1/robots/123/stop
+          description:  stop robot 123
+        - method: GET
+          url:  /api/v1/robots/123/orders
+          description:  robot 123 orders
+        - method: GET
+          url:  /api/v1/robots/123/logs
+          description:  robot 123 logs
+        - method: POST
+          url:  /api/v1/robots/new
+          description:  list of robot
+
     logos:
       - image_url: img/logos/aws.png
       - image_url: img/logos/docker.png
