@@ -1,5 +1,5 @@
 ---
-    layout: product
+    layout: product_with_pricing
 
 
     hero_title: IBTTP
@@ -30,8 +30,35 @@
 
  
 
-    
-    
+    api: 
+    - method: GET
+      url:  /api/v1/accounts
+      description:  list of Accounts
+    - method: GET
+      url:  /api/v1/account/U123456
+      description:  Account info
+    - method: GET
+      url:  /api/v1/account/U123456/positions
+      description:  positions for account 
+    - method: GET
+      url:  /api/v1/account/U123456/orders/open
+      description:  open orders for account
+    - method: GET
+      url:  /api/v1/account/U123456/orders/filled
+      description:  Filled orders for account
+    - method: GET
+      url:  /api/v1/robots/123/logs
+      description:  robot 123 logs
+    - method: POST
+      url:  /api/v1/accounts/U1234567/orders/new
+      description:  place order    
+    - method: POST
+      url:  /api/v1/accounts/U1234567/orders/76221/update
+      description:  update order    
+    - method: POST
+      url:  /api/v1/accounts/U1234567/orders/76221/cancel
+      description:  cancel order    
+  
     screenshots_background: bg-white
     screenshots: 
         - image_url: img/portfolio/account-info.png
@@ -48,33 +75,33 @@
 
     
     pricing: 
-        - title: חבילת זהב
+        - title: Single Account
           selected: featured
-          price:  82.33
+          price:  99.00
           period: פר חודש
           features:
-            - title: open source
+            - title: חשבון אינרקטיב יחיד
             - title: clsoed source
             - title: another one source
 
 
-        - title: חבילת כסף
+        - title: Multiple Accounts
           selected: 22
-          price:  22.33
+          price:  199
           period: פר חודש
           features:
-            - title: open source
+            - title: חשבון מסטר + עד 10 חשבונות
             - title: clsoed source
             - title: another one source
             - title: another one source
             - title: another one source
 
-        - title: חבילת ארד
+        - title: Nostro
           selected: bi
-          price:  12.33
+          price:  299.00
           period: פר חודש
           features:
-            - title: open source
+            - title: חשבון יחיד 
             - title: clsoed source
             - title: another one source
 
@@ -82,7 +109,7 @@
       - title: נתוני מסחר
         background: section-bg
         type: left
-        image_url: img/landing-pages.svg
+        image_url: img/ibttp/ibttp-quotes.png
         open_text: 
         main_text: מערכת הCRM כוללת מודול לניהול קמפיינים, ומשווקים ומאפשרת לך לעקוב אחרי הלידים  שלך
         features: 
@@ -99,7 +126,7 @@
       - title: העברת הוראות
         background: section-white
         type: right
-        image_url: img/porftolio.png
+        image_url: img/ibttp/ibttp-orders.png
         open_text: 
         main_text: דלור CRM מקצרת את תהליך פתיחת תיק ההשקעות , ומאפשרת מעקב אחר פתיחת התיק כולל מסמכי זיהוי , שאלון אפיון צרכים וחתימה דיגיטלית על מסמכים
         features: 
@@ -112,7 +139,7 @@
       - title: חיבור למערכות חיצוניות
         background: section-bg
         type: left
-        image_url: img/porftolio.png
+        image_url: img/ibttp/ibttp-monitor.png
         open_text: 
         main_text: דלור CRM מקצרת את תהליך פתיחת תיק ההשקעות , ומאפשרת מעקב אחר פתיחת התיק כולל מסמכי זיהוי , שאלון אפיון צרכים וחתימה דיגיטלית על מסמכים
         features: 
