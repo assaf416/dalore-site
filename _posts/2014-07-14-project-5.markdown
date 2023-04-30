@@ -1,0 +1,17 @@
+---
+title: מערכת CRM לאינטרקטיב ברוקרס
+subtitle: CRM
+layout: default
+modal-id: 5
+date: 2014-07-15
+thumbnail: fjord-crm-account.png
+alt: image-alt
+project-date: April 2014
+client: אינטרקטיב ברוקרס ישראל
+category: CRM
+description: מערכת לניהול פתיחת חשבונות מסחר לאינטרקטיב ברוקרס כולל מעקב אחר הוראות ועמלות
+
+img-1: fjord-crm-account.png
+img-2: fjord-crm-leads.png
+img-2: fjord-crm-leads.png
+---

@@ -1,0 +1,17 @@
+---
+title: מערכת לניהול חדר מסחר
+subtitle: אסטרטגיות מסחר
+layout: default
+modal-id: 2
+date: 2014-07-15
+thumbnail: bakar-4.png
+alt: image-alt
+project-date: April 2014
+client: ביג שוט
+category: מערכת מסחר
+description: מערכת לניהול פתיחת חשבונות מסחר לאינטרקטיב ברוקרס כולל מעקב אחר הוראות ועמלות
+
+img-1: bakar-1.png
+img-2: bakar-2.png
+img-3: bakar-3.png
+---

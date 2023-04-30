@@ -1,0 +1,17 @@
+---
+title: מערכת למסחר בנירות ערך
+subtitle: אסטרטגיות מסחר|
+layout: default
+modal-id: 1
+date: 2014-07-15
+thumbnail: wstocks-1.png
+alt: image-alt
+project-date: April 2014
+client: אינטרקטיב ברוקרס ישראל
+category: CRM
+description: מערכת לניהול פתיחת חשבונות מסחר לאינטרקטיב ברוקרס כולל מעקב אחר הוראות ועמלות
+
+img-1: wstocks-1.png
+img-2: wstocks-2.png
+img-3: wstocks-3.png
+---

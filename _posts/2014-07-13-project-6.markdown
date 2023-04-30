@@ -1,0 +1,17 @@
+---
+title: מערכת יומן מסחר
+subtitle: CRM
+layout: default
+modal-id: 3
+date: 2014-07-15
+thumbnail: yoman-2.png
+alt: image-alt
+project-date: April 2014
+client: אינטרקטיב ברוקרס ישראל
+category: מערכות מסלר
+description: מערכת לניהול פתיחת חשבונות מסחר לאינטרקטיב ברוקרס כולל מעקב אחר הוראות ועמלות
+
+img-1: yoman-1.png
+img-2: yoman-2.png
+img-3: yoman-3.png
+---

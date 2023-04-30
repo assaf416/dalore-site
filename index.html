@@ -1,75 +1,20 @@
 ---
-layout: front
-
-products_1_title: פתרונות למנהלי תיקים
-products_1:
-    - image_url: img/svg/009-briefcase.svg
-      title: Dalore CRM
-      text: הפתרון השלם לניהול בית השקעות החל משלב השיווק דרך תהליך פתיחת התיקים וניהול המסמכים הנלווים ועד ניהול קרנות כולל נתוני זמן אמת על החשבונות המנוהלים ושיגור הוראות מסחר לבורסה. הכל במערכת אחת המותאמת לסוג הפעילות של בית ההשקעות 
-      href: crm.html
-    - image_url: img/svg/017-tasks-2.svg
-      title: Dalore KYC
-      href: kyc.html
-      text: מערכת לניהול תיקי נוסטרו המאפשרת מסחר בניירות ערך  ומטבעות קריפטו לצוות הסוחרים שלך  ומאידך מאפשרת לך לנהל סיכונים ולנהל את הסוחרים מרחוק ולעקוב אחר ביצועי הסוחרים בזמן אמת, ישירות מן הדפדפן שלך
-    - image_url: img/svg/002-login.svg
-      title: Dalore Portals
-      text: הפורטלים שלנו מאפשרים ללקוחת שלך לקבל תמונה מלאה של החשבון שלהם , לברור יתרות ויצירת קשר מול צוות התמיכה שלך. פורטל המשווקים מאפשר לכל משווק שהגדרת לראות את התקדמות הלידים שלו , להוסיף לידים חדשים מהדפדן או מהנייד לעקוב אחר הכנסות שלו לאורך זמן.
-      href: portals.html    
-
-products_2_title: מערכות מסחר בניירות ערך
-products_2:
-  - image_url: img/svg/portfolio-1.svg
-    title: Dalore Trader
-    text: הפתרון השלם לניהול בית השקעות החל משלב השיווק דרך תהליך פתיחת התיקים וניהול המסמכים הנלווים ועד ניהול קרנות כולל נתוני זמן אמת על החשבונות המנוהלים ושיגור הוראות מסחר לבורסה. הכל במערכת אחת המותאמת לסוג הפעילות של בית ההשקעות 
-    href: trader.html
-  - image_url: img/svg/101-analytics-1.svg
-    title: Dalore Nostro
-    href: nostro.html
-    text: מערכת לניהול תיקי נוסטרו המאפשרת מסחר בניירות ערך  ומטבעות קריפטו לצוות הסוחרים שלך  ומאידך מאפשרת לך לנהל סיכונים ולנהל את הסוחרים מרחוק ולעקוב אחר ביצועי הסוחרים בזמן אמת, ישירות מן הדפדפן שלך
-
-products_3_title: מערכות לפיתוח רובוטים למסחר
-products3:
-    - image_url: img/svg/strategies-1.svg
-      title: Dalore Robots IDE
-      text: מערכת לפיתוח ובדיקה של אסטרטגיות מסחר בנירות ערך בשפת רובי
-      href: rde.html    
-    - image_url: img/svg/strategies-2.svg
-      title: Dalore Robot Server
-      text: שרת יעודי המחובר לחשבון אינטרקטיב ברוקרס הכולל מערכת לניהול אסטרטגיות מסחר והרצת מאות רובוטים בזמן אמת.
-      href: robots.html    
-    
-
-clients:
-    - image_url: img/clients/logo-impact.png
-    - image_url: img/clients/logo-fjord.png
-    - image_url: img/clients/logo-payfinder.png
-    - image_url: img/clients/logo-ib-il.png 
-    - image_url: img/clients/tase.png
-    - image_url: img/clients/logo-mexem.png
-    
-
-
-logos:
-    - image_url: img/logos/binance.png
-    - image_url: img/logos/ib.png
-    - image_url: img/clients/tase.png
-    - image_url: img/logos/maya.png
-    - image_url: img/logos/trade-station.png
-    - image_url: img/logos/bitfinex.png
-    
-tesemonials: 
-    - image_url: img/people/raviv.png
-      name: אסף שמש
-      title: מנהל מכירות בפייפינדר
-      message: מערכת ניהול המכירות של דלור חוסכת לי זמן יקר בטיפול מול הלקוחות
-    - image_url: img/people/lior.png
-      name: דוד שם טוב
-      title: מנהל תיקים בכיר
-      message: מערכת הCRM שלנו מאפשרת לי לקבל מידע אודות החשבונות בזמן אמת
-    - image_url: img/people/johnatan.png
-      name: יותם בארי
-      title: מנהל תיקים בכיר
-      message: ה CRM שלי שולח הוראות לבורסה! מי היה מאמין!
-  
-
+layout: default
 ---
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

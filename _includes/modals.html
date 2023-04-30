@@ -1,0 +1,111 @@
+<!-- Portfolio Modals -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+{% for post in site.posts %}
+<div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-content">
+        <div class="container outbox">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="modal-body">
+                        <hr class="star-primary">
+                        <div class="container text-center ">
+                            <h2>{{ post.title }}</h2>
+                            <table class='table table-condensed table-stripped'>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <b>
+                                                לקוח:
+                                            </b>
+                                            {{ post.client }}
+                                        </td>
+                                        <td>
+                                            <b>
+                                                תאריך:
+                                            </b>
+                                            {{ post.project-date }}
+                                        </td>
+                                        <td>
+                                            <b>
+                                                קטגוריה:
+                                            </b>
+                                            {{ post.category }}
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="3" class="text-center">
+                                            <br />
+                                            <br />
+
+                                            <div id="myCarousel" class="carousel slide" data-ride="carousel"
+                                                style="width:100%">
+                                                <!-- Indicators -->
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                </ol>
+
+                                                <!-- Wrapper for slides -->
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img src="img/portfolio/{{ post.img-1 }}"
+                                                            class="img-responsive img-centered" alt="1-{{ post.alt }}"
+                                                            style="width:100%">
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <img src="img/portfolio/{{ post.img-2 }}"
+                                                            class="img-responsive img-centered" alt="1-{{ post.alt }}"
+                                                            style="width:100%">
+                                                    </div>
+
+                                                    <div class="item">
+                                                        <img src="img/portfolio/{{ post.img-3 }}"
+                                                            class="img-responsive img-centered" alt="1-{{ post.alt }}"
+                                                            style="width:100%">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <p>{{ post.description }}</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            סגור</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+<style>
+    img-centered {
+        text-align: center;
+        width: 100%;
+    }
+
+    .outbox {
+        width: 100%;
+        margin-right: -100px;
+    }
+
+    #myCarousel {
+        width: 100%;
+        margin-left: 1200px;
+        text-align: center;
+    }
+</style>

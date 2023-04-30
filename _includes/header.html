@@ -1,55 +1,73 @@
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" style="direction:rtl;">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
 
-        <a href="index.html" class="logo mr-auto"> <h4 style="font-size:22px;">
-                <img src="img/Lighthouse free icon.svg" style="width:80px" alt="" class="img-fluid" >
-                Dalore </h4></a>
-        <!--<h1 class="logo _mr-auto float-right"><a href="index.html">Dalore Finacial</a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
+            <a class="navbar-brand page-scroll" href="/">
+                <image src="img/dalor-logo-square.png" style="height:50px;margin-top:-16px" class="pull-left" />
+                דלור פתרונות תוכנה פיננסים
+            </a>
+        </div>
 
-        <nav class="nav-menu d-none d-lg-block float-left" >
-            <ul>
-
-                <li><a href="index.html#contact">צור קשר</a></li>
-                <li><a href="tikim2.html#contact">ניהול תיקים 2.0</a></li>
-
-                
-                <li class="drop-down"><a href="">פרוייקטים</a>
-                    <ul class="text-right">
-                        <li><a href="bs-trading-server.html"> מערכת מסחר לביג שוט</a></li>
-                        <li><a href="bs-market-server.html"> שרת שערים שוק לביג שוט</a></li>
-                        <li><a href="fjord.html".html">  פיתוח מערכת מסחר רובטי לפיורד</a></li>
-                        
-                    </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="scollapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="/"></a>
                 </li>
 
 
-
-                <li class="drop-down"><a href="">שרותים</a>
-                    <ul class="text-right">
-                        <li><a href="market-data.html">נתוני שוק מהבורסה לניע</a></li>
-                        <li><a href="ibttp.html"> חיבור לאינטרקטיב ברוקרס</a></li>
-                        <li><a href="sivron.html"> חיבור למסחר בבנקים בישראל</a></li>
-                        <li><a href="robots.html"> שרת להרצת רובוטים למסחר</a></li>
-                        
-                    </ul>
+                <li>
+                    <a class="page-scroll" href="#contact">צור קשר</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#clients">לקוחות</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">שרותים</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#products">מוצרים</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">אודות</a>
                 </li>
 
-
-                <li class="drop-down"><a href="">מוצרים</a>
-                    <ul class="text-right">
-                        <li><a href="crm.html">מערכת לניהול תיקים </a></li>
-                        <li><a href="trading-room.html"> מערכות ניהול חדר מסחר </a></li>
-                        <li><a href="portals.html"> פורטלים ללקוחות ומשווקים</a></li>
-                    </ul>
-                </li>
-
-                <li class="active"><a href="index.html">ראשי</a></li>
             </ul>
-        </nav><!-- .nav-menu -->
-
-
-
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-</header><!-- End Header -->
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class='row'>
+            <div class='col-lg-8'>
+                <div class="intro-text">
+                    <div class="intro-heading">דלור פתרונות תוכנה פיננסים</div>
+                </div>
+            </div>
+            <div class='col-lg-4'>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<style>
+header {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+</style>

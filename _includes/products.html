@@ -1,73 +1,68 @@
-<!-- ======= Services Section ======= -->
-<section id="services" class="services ">
-    <div class="container text-hebrew text-right" data-aos="fade-up">
-
-        <div class="section-title">
-            <h2> {{page.products_1_title}} </h2>
-        </div>
-
+<!-- Services Section -->
+<section id="products">
+    <div class="container">
         <div class="row">
-            {% for product in page.products_1 %}
-            <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box text-center">
-                    
-                    <div class="text-center"><img src="{{product.image_url}}" class="img-fluid " alt="" width="150"></div>
-                    <br/>
-                    <b class="">
-                        <a href="{{product.href}}" class="text-center">{{product.title}}</a>
-                    </b>
-                    <p class="text-right text-hebrew">{{product.text}}</p>
-                </div>
+            <div class="col-lg-12 text-center">
+                <hr />
+                <h2 class="ssection-heading">
+                    מוצרים
+                </h2>
+                <hr />
             </div>
-            <br/>
-            {% endfor %}
         </div>
-        <br/>
-        <br/>
-        <div class="section-title">
-            <h2> {{page.products_2_title}} </h2>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <a href="/signals">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-red"></i>
+                        <i class="fas fa-signal fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <h4 class="service-heading"> DALORE SIGNALS</h4>
+                <p class="text-muted  text-right">
+                    מערכת לזיהוי סיגנלים טכנים מנתוני שוק ההון. מאפשרת יצירת סקרינרים מתקדמים לזיהוי מגמות בשוק. המערכת
+                    מתחברת לנתוני שוק המניות בארה"ב ולבייננס
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <a href="/ibttp">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-red"></i>
+                        <i class="fa fa-plug fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <h4 class="service-heading"> IB Bridge </h4>
+                <p class="text-muted text-right">
+                    פתרון לחיבור בקלות לאינטרקטיב ברוקרס לקבלת נתוני חשבון ושוק ולהעברת הוראות.
+
+                </p>
+            </div>
+            <div class="col-md-3">
+                <a href="/rde">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-red"></i>
+                        <i class="fa fa-robot fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <h4 class="service-heading"> Dalore RDE </h4>
+                <p class="text-muted text-right">
+                    פלטפורמה לפיתוח רובטים למסחר במניות ומטבעות קריפוטו. כולל בדיקות בק טסטים ואופטימיזציה
+            </div>
+            <div class="col-md-3">
+                <a href="/yoman">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                        <i class="far fa-chart-bar fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <h4 class="service-heading">יומן מסחר </h4>
+                <p class="text-muted text-right">
+
+                    מערכת לניהול מסחר הכוללת יומן וכלי ניתוח מתקדמים לעסקאות בשוק ההון והקריפטו
+
+                </p>
+            </div>
         </div>
 
-        <div class="row">
-            {% for product in page.products_2 %}
-            <div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box text-center">
-                    
-                    <div class="text-center"><img src="{{product.image_url}}" class="img-fluid " alt="" width="150"></div>
-                    <br/>
-                    <b class="">
-                        <a href="{{product.href}}" class="text-center">{{product.title}}</a>
-                    </b>
-                    <p class="text-right text-hebrew">{{product.text}}</p>
-                </div>
-            </div>
-            <br/>
-            {% endfor %}
-        </div>
-        
-        
-        <br/>
-        <br/>
-      
-        
-            <div class="section-title">
-                <h2> {{page.products_3_title}} </h2>
-            </div>
-        <div class="row">
-            
-            {% for product in page.products3 %}
-            <div class="col-xl-6 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="icon-box  text-center">
-                    
-                    <div class="text-center"><img src="{{product.image_url}}" class="img-fluid" alt="" width="150"></div>
-                    <br/>
-                    <b class="text-center">
-                        <a href="{{product.href}}">{{product.title}}</a></b>
-                    <p class="text-right text-hebrew">{{product.text}}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section><!-- End Services Section -->
-
+</section>
