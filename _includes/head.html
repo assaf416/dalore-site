@@ -33,7 +33,26 @@
 
     <style>
 
-        
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    background-color: #fff;
+    color: #333;
+    white-space: nowrap;
+}
+
+.sub-menu{
+    background-color: #eee;
+    color:#333;
+}
+.sub-menu > a{
+    background-color: #fff;
+    color:#333;
+}
+
 .text-center{
     text-align: center;
 }
@@ -59,7 +78,7 @@ font-weight: bold;
     padding-bottom:100px;
 }
 
- body , h1 , h2, h3, h4, h5, h6, p, {
+ body , h1 , h2, h3, h4, h5, h6, p {
     overflow-x: hidden;
     font-family: 'Heebo', sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
