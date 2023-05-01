@@ -18,10 +18,20 @@
 color: #d32f2f;
 }
 
+.text-bold{
+font-weight: bold;
+}
 
- body {
+.mt-100{
+    margin-top:100px;
+}
+.pb-100{
+    padding-bottom:100px;
+}
+
+ body , h1 , h2, h3, h4, h5, h6, p, {
     overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Heebo', sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -91,6 +101,10 @@ h6 {
     font-weight: 700;
     color: #fff;
     background-color: #{{ site.data.template.color.primary }};
+}
+
+.bg-dark{
+    background-color: #eee;
 }
 
 .btn-primary:hover,
